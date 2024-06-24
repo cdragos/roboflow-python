@@ -20,20 +20,11 @@ per-file-ignores = """
 [tool.black]
 line-length = 120
 
-[tool.isort]
-line_length = 120
-profile = "black"
-
 [tool.bandit]
 target = ["test", "roboflow"]
 tests = ["B201", "B301"]
 
-[tool.autoflake]
-check = true
-imports = ["cv2", "roboflow"]
-
 [tool.ruff]
-target-version = "py38"
 # Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
 select = ["E", "F"]
 ignore = []
